@@ -125,11 +125,11 @@ def switch_location(name):
     call(['scselect', name], stdout=open('/dev/null', 'w'))
 
 switch_location('SOCK Proxied Public')
-print 'SOCKS Proxy on localhost:7890'
+print 'SOCKS Proxy on localhost:8080'
 print 'Switched network configuration'
 try:
     #call(['ssh', '-ND', '7890', '78.46.64.175'])
-    call(['ssh', '-ND', '7890', 'flaskbot'])
+    call(['ssh', '-ND', '8080', 'com'])
 except (KeyboardInterrupt, EOFError):
     print 'Switched back to', old_location
     switch_location(old_location)
