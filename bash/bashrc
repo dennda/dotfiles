@@ -1,6 +1,7 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+alias vim=mvim
 export EDITOR=vim
 
 MITSUHIKOS_DEFAULT_COLOR="[00m"
